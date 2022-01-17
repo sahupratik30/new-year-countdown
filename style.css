@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  min-height: 100vh;
+  color: #fff;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("./images/bg.jpg");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main {
+  width: 50rem;
+  max-width: 95%;
+  height: 20rem;
+  position: relative;
+}
+main h1 {
+  text-align: center;
+  font-size: 3rem;
+  text-transform: uppercase;
+  background: rgb(34, 193, 195);
+  background: linear-gradient(
+    0deg,
+    rgba(34, 193, 195, 1) 0%,
+    rgba(253, 187, 45, 1) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 1.5px;
+}
+main .countdown__container {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+main .countdown__container div {
+  text-align: center;
+  padding: 1rem 1.8rem;
+  background: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(0.5px);
+  -webkit-backdrop-filter: blur(0.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: rgb(176, 255, 160);
+}
+main .countdown__container div span {
+  font-size: 0.85rem;
+}
+main .countdown__container span#colon {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-top: 1.3rem;
+  color: rgb(176, 255, 160);
+  animation: blink 1s linear infinite;
+  -webkit-animation: blink 1s linear infinite;
+}
+main .countdown__container div h2 {
+  font-size: 2.5rem;
+}
+@keyframes blink {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
